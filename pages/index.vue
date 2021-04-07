@@ -157,19 +157,6 @@
                 </v-row>
                 <v-row class="mb-2">
                   <v-col cols="12" md="4">
-                    <h4 class="subheader">Laravel/php</h4>
-                  </v-col>
-                  <v-col cols="12" md="4">
-                    <v-rating
-                      v-model="rating"
-                      background-color="orange"
-                      color="orange"
-                      dense
-                    ></v-rating>
-                  </v-col>
-                </v-row>
-                <v-row class="mb-2">
-                  <v-col cols="12" md="4">
                     <h4 class="subheader">MySQL</h4>
                   </v-col>
                   <v-col cols="12" md="4">
@@ -197,6 +184,19 @@
                 <v-row class="mb-2">
                   <v-col cols="12" md="4">
                     <h4 class="subheader">Vuejs/Vuetifyjs</h4>
+                  </v-col>
+                  <v-col cols="12" md="4">
+                    <v-rating
+                      v-model="rating"
+                      background-color="orange"
+                      color="orange"
+                      dense
+                    ></v-rating>
+                  </v-col>
+                </v-row>
+                   <v-row class="mb-2">
+                  <v-col cols="12" md="4">
+                    <h4 class="subheader">Nuxtjs</h4>
                   </v-col>
                   <v-col cols="12" md="4">
                     <v-rating
