@@ -230,56 +230,26 @@
                                 Show Details
                               </v-expansion-panel-header>
                               <v-expansion-panel-content>
-                                <v-card flat tile>
-                                  <v-window v-model="onboarding1">
-                                    <v-window-item
-                                      v-for="n in n.project"
-                                      :key="n.id"
-                                    >
-                                      <v-card color="grey">
-                                        <v-row
-                                          class="fill-height"
-                                          align="center"
-                                          justify="center"
-                                        >
-                                          <v-img
-                                            height="500"
-                                            width="1000"
-                                            :src="n.src"
-                                          ></v-img>
-                                        </v-row>
-                                      </v-card>
-                                    </v-window-item>
-                                  </v-window>
-                                  <v-card-actions class="justify-space-between">
-                                    <v-btn text @click="prev">
-                                      <v-icon>mdi-chevron-left</v-icon>
-                                    </v-btn>
-                                    <v-item-group
-                                      v-model="onboarding1"
-                                      class="text-center"
-                                      mandatory
-                                    >
-                                      <v-item
-                                        v-for="n in n.project"
-                                        :key="n.id"
-                                        v-slot="{ active, toggle }"
+                                <v-carousel hide-delimiters>
+                                  <v-carousel-item
+                                    v-for="n in n.project"
+                                    :key="n.id"
+                                  >
+                                    <v-card color="grey">
+                                      <v-row
+                                        class="fill-height"
+                                        align="center"
+                                        justify="center"
                                       >
-                                        <v-btn
-                                          :input-value="active"
-                                          icon
-                                          @click="toggle"
-                                          color="grey darken-2"
-                                        >
-                                          <v-icon>mdi-record</v-icon>
-                                        </v-btn>
-                                      </v-item>
-                                    </v-item-group>
-                                    <v-btn text @click="next">
-                                      <v-icon>mdi-chevron-right</v-icon>
-                                    </v-btn>
-                                  </v-card-actions>
-                                </v-card>
+                                        <v-img
+                                          height="500"
+                                          width="1000"
+                                          :src="n.src"
+                                        ></v-img>
+                                      </v-row>
+                                    </v-card>
+                                  </v-carousel-item>
+                                </v-carousel>
                               </v-expansion-panel-content>
                             </v-expansion-panel>
                           </v-expansion-panels>
@@ -526,16 +496,13 @@ export default {
             "Developed a full-stack web application, 'My Diary', using Vue that allows users to Registration on the site and saved your diary. User's progress is stored on a backend created using laravel and mySql <br/> Go to link <a href='https://nice-m.herokuapp.com'>Click her</a>",
           project: [
             {
-              id:20,
-              src:"/20.png"
-            }
+              id: 20,
+              src: "/20.png",
+            },
           ],
         },
       ],
       window: 0,
-      length: 18,
-      onboarding: 0,
-      onboarding1: 0,
     };
   },
   methods: {
