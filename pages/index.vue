@@ -194,7 +194,7 @@
                     ></v-rating>
                   </v-col>
                 </v-row>
-                   <v-row class="mb-2">
+                <v-row class="mb-2">
                   <v-col cols="12" md="4">
                     <h4 class="subheader">Nuxtjs</h4>
                   </v-col>
@@ -498,6 +498,42 @@ export default {
             {
               id: 20,
               src: "/20.png",
+            },
+          ],
+        },
+        {
+          id: 3,
+          title: "Weather",
+          desc:
+            "It contains all the basic weather details. You can get real-time local weather and forecasts for any location in the world. Can show you the weather forecast for up to three days in advance. Moreover, there is information on hourly forecast, rainfall, moving sunrise and sunset, and phases on the moon.",
+          project: [
+            {
+              id: 21,
+              src: "/21.png",
+            },
+            {
+              id: 22,
+              src: "/22.png",
+            },
+            {
+              id: 23,
+              src: "/23.png",
+            },
+            {
+              id: 233,
+              src: "/23 (1).png",
+            },
+            {
+              id: 24,
+              src: "/24.png",
+            },
+            {
+              id: 25,
+              src: "/25.png",
+            },
+            {
+              id: 26,
+              src: "/26.png",
             },
           ],
         },
